@@ -33,6 +33,8 @@ async function fetchAndDisplayUnresolvedTickets() {
   } catch (e) {
     error.textContent = `Error: Fetch failed ${e.message}`;
   } finally {
+    // TASK 4 use finally
+    // always runs regardless of try catch
     console.log("Fetch completed");
   }
 }
