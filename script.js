@@ -17,6 +17,8 @@ async function fetchAndDisplayUnresolvedTickets() {
     if (!response.ok) {
       throw new Error("Failed to fetch tickets!");
     }
+    // TASK 3
+    // Display data dynamically
     data.forEach(ticket => {
       const ticketDiv = document.createElement('div');
       ticketDiv.innerHTML = `
